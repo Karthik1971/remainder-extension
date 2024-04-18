@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Password Reset Reminder</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Password Reset Reminder</h1>
+    <form id="website-form">
+      <label for="website-name">Website Name:</label>
+      <input type="text" id="website-name" required />
+      <label for="website-url">Website URL:</label>
+      <input type="url" id="website-url" required />
+      <label for="reminder-days">Reminder Days:</label>
+      <input type="number" id="reminder-days" min="1" required />
+      <button type="submit">Add Website</button>
+    </form>
+    <ul id="website-list"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>

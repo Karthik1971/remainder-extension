@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Password Reset Reminder",
+    "version": "1.0",
+    "description": "Reminds users to reset their passwords for frequented websites.",
+    "permissions": ["notifications", "storage", "alarms"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["background.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
